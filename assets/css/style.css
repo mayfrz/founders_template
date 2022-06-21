@@ -1,0 +1,95 @@
+/* =========== GOOGLE FONTS Hammersmith One,Playfair Display and  Roboto*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/*===== VARIABLES CSS =====*/
+
+:root {
+    /* colors */
+    --color1: #242f51;
+    --color2: #2500f9;
+    --color3: #ffffff;
+    --color4: #616368;
+    --color5: #f55767;
+    --color6: #2563ff;
+    --color7: #40975f;
+    --color8: #999ca5;
+    --color9: #09142e;
+    --color10: #fcae61;
+    /* font and typography */
+    --font-poppins: 'Poppins', sans-serif;
+    /* z index */
+    --header-z-fixed: 99;
+    /* paddings */
+    --padding-container-x: 15px;
+    --padding-container-y: 115px
+}
+
+
+/*========== BASE ==========*/
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+}
+
+ul,
+ol {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+body {
+    font-family: "Poppins";
+}
+
+
+/* ============ SELECTORS ============= */
+
+.container {
+    padding-left: var(--padding-container-x);
+    padding-right: var(--padding-container-x);
+    max-width: 1210px;
+    margin: 0 auto;
+    background-color: red;
+}
+
+.heading {
+    position: fixed;
+    width: 100%;
+    z-index: var(--header-z-fixed);
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading__logo {
+    display: flex;
+    max-width: 518px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.heading__buttons {
+    max-width: 234px;
+    width: 100%;
+}
