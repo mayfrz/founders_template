@@ -160,7 +160,7 @@ body {
 }
 
 @media (max-width:768px) {
-    /*  start hero*/
+    /*  start header*/
     .heading label {
         display: block;
     }
@@ -175,7 +175,7 @@ body {
     .heading .container {
         flex-wrap: wrap;
     }
-    .heading .logo,
+    .heading .heading__logo,
     .heading label {
         flex-basis: 50%;
     }
