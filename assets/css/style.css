@@ -56,8 +56,75 @@ img {
 
 body {
     font-weight: 400;
-    /*  font-family: 'Dela Gothic One', cursive;*/
     font-family: var(--font-DM-Sans);
+    background-color: var(--color3);
+    font-size: 10px;
+    color: var(--color1);
+}
+
+h1 {
+    font-size: 82px;
+    line-height: 85px;
+    font-family: var(--font-Gothic);
+    text-align: center;
+    -webkit-text-stroke: 2px var(--color1);
+    color: transparent;
+}
+
+h1 span {
+    color: var(--color1);
+}
+
+h2 {
+    font-size: 75px;
+    line-height: 85px;
+    font-family: "Dela Gothic One";
+    text-align: center;
+    padding: 0 var(--padding-container-x);
+    width: 100%;
+    color: var(--color3);
+}
+
+h2 span {
+    color: var(--color2);
+}
+
+h3 {
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--color2);
+    font-family: var(--font-Gothic);
+}
+
+.first__btn {
+    width: 124px;
+    height: 27px;
+    border-radius: 14px;
+    background-color: var(--color1);
+    border: 3px solid var(--color1);
+    font-size: 12px;
+    color: var(--color3);
+    font-family: var(--font-Gothic);
+    display: inline-flex;
+    justify-content: center;
+}
+
+.first__btn--modifier {
+    background-color: var(--color3);
+    border: 3px solid var(--color1);
+    color: var(--color1);
+}
+
+.first__btn--second {
+    background-color: transparent;
+    border: 3px solid var(--color3);
+    color: var(--color3);
+}
+
+.first__btn--third {
+    background-color: var(--color3);
+    border: 3px solid var(--color3);
+    color: var(--color1);
 }
 
 
@@ -69,6 +136,9 @@ body {
     max-width: 1210px;
     margin: 0 auto;
 }
+
+
+/* ============ START SECTION HEADING ============= */
 
 .heading {
     position: fixed;
@@ -83,7 +153,7 @@ body {
 }
 
 .container--heading {
-    padding-top: 92px;
+    /*padding-top: 92px;*/
     padding-bottom: 20px;
 }
 
@@ -97,17 +167,13 @@ body {
     display: none;
 }
 
-.heading__left {
-    display: flex;
-    max-width: 518px;
+.navigation {
+    max-width: 1089px;
     width: 100%;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.navigation {
-    max-width: 414px;
-    width: 100%;
+    padding-left: var(--padding-container-x);
 }
 
 .menu-bar {
@@ -126,38 +192,560 @@ body {
     color: var(--color2);
 }
 
-.heading__logo img {
+.heading .heading__logo img {
     width: 82px;
 }
 
-.heading__right {
+.heading .heading__buttons {
     max-width: 264px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     column-gap: 15px;
-    padding-top: 23px;
-    padding-bottom: 31px;
+    padding-top: 22px;
+    padding-bottom: 32px;
 }
 
-.first__btn {
-    width: 124px;
-    height: 27px;
-    border-radius: 14px;
-    background-color: var(--color1);
-    border: 3px solid var(--color1);
-    font-size: 12px;
-    color: var(--color3);
+
+/* ============ END SECTION HEADING ============= */
+
+
+/* ============ START SECTION HERO ============= */
+
+.hero {
+    background-image: url(../img/Shape\ .png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    position: relative;
+}
+
+.hero .container {
+    display: flex;
+    flex-basis: 100%;
+    padding-top: 139px;
+    padding-bottom: 80px;
+}
+
+.hero .hero__info {
+    flex-basis: 57%;
+    padding-top: 80px;
+}
+
+.hero .hero__title img {
+    padding-bottom: 34px;
+}
+
+.hero .hero__box {
+    display: flex;
+    max-width: 496px;
+    column-gap: 69px;
+}
+
+.hero .hero__item {
+    max-width: 213px;
+    width: 100%;
+}
+
+.hero .hero__item h3 {
+    padding-bottom: 5px;
+}
+
+.hero .hero__item p {
+    line-height: 15px;
+    padding-bottom: 17px;
+}
+
+.hero .hero__grafic {
+    position: relative;
+    display: flex;
+    flex-basis: 40%;
+    max-width: 491px;
+    padding-top: 10px;
+}
+
+.hero .hero__grafic p {
+    transform: rotate(90deg);
+    max-width: 204px;
+    width: 100%;
+    position: absolute;
+    right: -25%;
+    top: 18%;
+    line-height: 15px;
+    flex: 0 1 204px;
+}
+
+.sticker {
+    width: 157px;
+    height: 48px;
+    background-color: #eacf3f;
+    border: 5px solid #eacf3f;
+    border-radius: 60%;
+}
+
+.sticker p {
+    font-size: 17px;
+    line-height: 39px;
+    color: var(--color2);
+    font-family: "Dela Gothic One";
     text-align: center;
-    font-family: var(--font-Gothic);
-    /*  padding: 8px clamp(10px, 2.5vw, 20px);*/
 }
 
-.first__btn--modifier {
-    background-color: var(--color3);
-    border: 3px solid var(--color1);
-    color: var(--color1);
+.hero .sticker {
+    transform: rotate(349deg);
+    position: absolute;
+    bottom: 8%;
+    left: 7%;
+    z-index: 3;
 }
+
+.hero .sticker__diamond {
+    position: absolute;
+    width: 181px;
+    transform: rotate(-41deg);
+    bottom: -6%;
+    left: -2%;
+    z-index: 2;
+}
+
+
+/* ============ END SECTION HERO ============= */
+
+
+/* ============ START SECTION aspiring ============= */
+
+.aspiring {
+    background-color: var(--color1);
+    color: var(--color3);
+    position: relative;
+}
+
+.aspiring .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 110px;
+    padding-bottom: 103px;
+}
+
+.aspiring h4 {
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--color4);
+    padding-bottom: 18px;
+    text-align: center;
+}
+
+.aspiring h2 {
+    max-width: 854px;
+}
+
+.aspiring p:nth-child(3) {
+    max-width: 681px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    padding-top: 35px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+.aspiring .sticker {
+    transform: rotate(5deg);
+}
+
+.aspiring .sticker__diamond {
+    position: absolute;
+    top: -22%;
+    right: -2%;
+}
+
+
+/* ============ END SECTION aspiring ============= */
+
+
+/* ============ START SECTION NEWS ============= */
+
+.news {
+    position: relative;
+}
+
+.news .container {
+    padding-bottom: 130px;
+}
+
+.news .news__box {
+    display: flex;
+    max-width: 1177px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.news .news__title {
+    padding-top: 120px;
+    padding-bottom: 111px;
+}
+
+.news .news__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.news .news__item img {
+    border-radius: 50%;
+    background-color: black;
+    background-blend-mode: soft-light;
+}
+
+.news .news__item h3 {
+    text-align: center;
+    padding-top: 22px;
+    padding-bottom: 10px;
+}
+
+.news .news__item p {
+    max-width: 217px;
+    line-height: 15px;
+    text-align: center;
+    padding-bottom: 14px;
+}
+
+.news .sticker__diamond {
+    position: absolute;
+    top: 12%;
+    right: -2%;
+}
+
+.news .sticker__diamond-2 {
+    position: absolute;
+    bottom: 19%;
+    left: -3%;
+    width: 152px;
+    transform: rotate(-43deg);
+    z-index: -10;
+}
+
+
+/* ============ END SECTION NEWS ============= */
+
+
+/* ============ START SECTION BELIEVE ============= */
+
+.believe {
+    background-color: var(--color1);
+    background-image: url(../img/Shape-Believe\ .png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    position: relative;
+}
+
+.believe .container {
+    display: flex;
+    flex-basis: 100%;
+    padding-top: 58px;
+    max-width: 1069px;
+    padding-bottom: 59px;
+    justify-content: space-between;
+    padding-bottom: 60px;
+}
+
+.believe .believe__grafic {
+    position: relative;
+    flex: 0 1 550px;
+    display: flex;
+}
+
+.believe .believe__grafic p {
+    transform: rotate(270deg);
+    max-width: 204px;
+    width: 100%;
+    color: var(--color3);
+    position: absolute;
+    line-height: 15px;
+    flex: 0 1 204px;
+    left: -28%;
+    bottom: 11%;
+}
+
+.believe .believe__info {
+    max-width: 483px;
+    width: 100%;
+    align-items: center;
+    text-align: left;
+    padding-top: 225px
+}
+
+.believe .believe__info h3 {
+    padding-bottom: 12px;
+}
+
+.believe .believe__info h2 {
+    text-align: left;
+    padding: 0;
+    line-height: 72px;
+}
+
+.believe .believe__info p {
+    padding-top: 34px;
+    padding-bottom: 19px;
+    line-height: 15px;
+    color: var(--color3);
+    max-width: 440px;
+}
+
+.believe .sticker__diamond {
+    position: absolute;
+    top: 23%;
+    transform: rotate(42deg);
+    left: -2%;
+}
+
+.believe .sticker {
+    position: absolute;
+    right: 9%;
+    bottom: 7%;
+    transform: rotate(11deg);
+}
+
+
+/* ============ END SECTION BELIEVE ============= */
+
+
+/* ============ START SECTION COMPANIES ============= */
+
+.companies {
+    position: relative;
+}
+
+.companies .container {
+    padding-bottom: 108px;
+}
+
+.companies .companies__title {
+    text-align: center;
+    padding-top: 93px;
+    padding-bottom: 100px;
+}
+
+.companies .companies__title p {
+    line-height: 15px;
+    max-width: 518px;
+    margin: 0 auto;
+    padding-top: 22px;
+}
+
+.companies .companies__box {
+    display: grid;
+    max-width: 1129px;
+    margin: 0 auto;
+    grid-template-columns: auto auto;
+    column-gap: 127px;
+    row-gap: 52px;
+    padding: 0 40px;
+}
+
+.companies .companies__card {
+    max-width: 461px;
+    width: 100%;
+}
+
+.companies .companies__card .companies__card--flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.companies .companies__card .companies__card--flex h3 {
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.companies .companies__card .companies__card--flex p {
+    line-height: 15px;
+    max-width: 280px;
+}
+
+.companies .sticker__diamond {
+    position: absolute;
+    top: 6%;
+    right: -2%;
+    transform: rotate(50deg);
+}
+
+
+/* ============ END SECTION COMPANIES ============= */
+
+
+/* ============ START SECTION START-UP ============= */
+
+.start-up {
+    background-color: var(--color1);
+    background-image: url(../img/shape-startUp.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    color: var(--color3);
+}
+
+.start-up .start-up__box {
+    max-width: 1063px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.start-up .start-up__info {
+    max-width: 435px;
+    padding-top: 121px;
+    width: 100%;
+    flex-basis: 40%;
+}
+
+.start-up .start-up__info h2 {
+    padding: 0;
+    text-align: left;
+}
+
+.start-up .start-up__info p {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.start-up .start-up__image {
+    flex: 0 1 371px;
+    align-self: flex-end;
+    flex-basis: 38%;
+}
+
+.start-up .start-up__items {
+    max-width: 213px;
+    width: 100%;
+    padding-top: 204px;
+    padding-bottom: 207px;
+}
+
+.start-up .start-up__item {
+    padding-bottom: 21px;
+}
+
+.start-up .start-up__item h3 {
+    padding-bottom: 16px;
+}
+
+.start-up .start-up__item p {
+    padding-bottom: 4px;
+    line-height: 15px;
+}
+
+.start-up .sticker__diamond {
+    position: absolute;
+    bottom: 0;
+    left: -3%;
+}
+
+.start-up .sticker {
+    position: absolute;
+    top: 14%;
+    right: 9%;
+    transform: rotate(352deg);
+}
+
+
+/* ============ END SECTION START-UP ============= */
+
+
+/* ============ START SECTION TESTIMONIALS ============= */
+
+.testimonials {}
+
+.testimonials .container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 103px;
+    max-width: 1247px;
+    width: 100%;
+}
+
+.testimonials .testimonials__title {
+    text-align: center;
+    padding: 15px;
+    padding-bottom: 63px;
+}
+
+.testimonials .testimonials__title img {
+    flex: 0 1 864px;
+}
+
+.testimonials .testimonials__box {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.testimonials .testimonials__item {
+    max-width: 315px;
+    width: 100%;
+}
+
+.testimonials .testimonials__item p {
+    line-height: 15px;
+    text-align: justify;
+    padding-top: 12px;
+}
+
+.testimonials a {
+    margin: 0 auto;
+}
+
+
+/* ============ END SECTION TESTIMONIALS ============= */
+
+
+/* ============ START SECTION FOOTERING ============= */
+
+.footering {
+    background-image: url(../img/Shape-footer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+
+.footering .footering__box {
+    padding-top: 94px;
+    padding-bottom: 52px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1070px;
+    width: 100%;
+}
+
+.footering .footering__item {
+    max-width: 110px;
+}
+
+.footering .footering__item h3 {
+    padding-bottom: 17px;
+}
+
+.footering .footering__copy p {
+    padding-bottom: 116px;
+    line-height: 15px;
+    color: #3055b1;
+}
+
+
+/* ============ END SECTION FOOTERING ============= */
 
 @media (max-width:768px) {
     /*  start header*/
@@ -188,6 +776,7 @@ body {
     }
     .menu-bar ul {
         flex-direction: column;
+        align-items: center;
     }
     .heading input:checked~label span:nth-child(1) {
         display: none;
@@ -199,4 +788,70 @@ body {
         display: flex;
         flex-direction: column;
     }
+    .hero .container {
+        flex-direction: column;
+        row-gap: 30px;
+        align-items: center;
+    }
+    /* ============ START SECTION NEWS ============= */
+    .news .news__box {
+        gap: 30px;
+        justify-content: center;
+    }
+    /* ============ END SECTION NEWS ============= */
+    /* ============ START SECTION BELIEVE ============= */
+    .believe .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .believe .believe__info {
+        padding-top: 60px;
+        text-align: center;
+    }
+    /* ============ END SECTION BELIEVE ============= */
+    /* ============ START SECTION COMPANIES ============= */
+    .companies .companies__box {
+        grid-template-columns: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .companies .companies__card {
+        max-width: 361px;
+        width: 100%;
+    }
+    /* ============ END SECTION COMPANIES ============= */
+    /* ============ START SECTION START UP ============= */
+    .start-up .start-up__box {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .start-up .sticker {
+        top: 3%;
+        right: 1%;
+        transform: rotate(33deg);
+    }
+    .start-up .start-up__info h2 {
+        font-size: 60px;
+        line-height: 65px;
+    }
+    .start-up .start-up__info,
+    .start-up .start-up__items {
+        padding-top: 60px;
+    }
+    .start-up .start-up__items {
+        padding-bottom: 120px;
+    }
+    /* ============ END SECTION START UP ============= */
+    /* ============ START SECTION TESTIMONIALS============= */
+    .testimonials .testimonials__box {
+        justify-content: space-evenly;
+    }
+    /* ============ END SECTION TESTIMONIALS============= */
+    /* ============ START SECTION FOOTERING ============= */
+    .footering .footering__box {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    /* ============ END SECTION FOOTERING ============= */
 }
